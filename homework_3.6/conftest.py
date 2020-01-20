@@ -7,10 +7,10 @@ language_list = ["ar", "ca", "cs", "da", "de", "en-gb", "el", "es", "fi", "fr", 
 
 #Параметры выбора браузера и языка пользователя
 def pytest_addoption(parser):
-    parser.addoption('--browser_name', action='store', default="firefox",
+    parser.addoption('--browser_name', action='store', default="chorme",
                     help="Choose browser: chrome or firefox")
     parser.addoption('--language', action='store', default=None,
-                     help="Choose language: ru o fr")
+                     help="Choose language")
 
 #Фикстура проверки введеного параметра языка пользователя
 @pytest.fixture
